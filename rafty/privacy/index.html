@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafty - Privacy Policy</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" hreflang="fr" href="fr/">
+    <link rel="alternate" hreflang="en" href="./">
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="fr/">Fran&#231;ais</a>
+        </div>
+
+        <h1>Rafty - Privacy Policy</h1>
+        <p class="effective-date">Effective date: March 16, 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>Rafty is a floating browser app for Android developed by Hogwai. This privacy policy explains what data the app handles and how.</p>
+        <p>Rafty is designed with privacy in mind: all your data stays on your device. We do not operate any servers, and we do not collect, transmit, or store any personal information.</p>
+
+        <h2>2. Data Collected and Stored Locally</h2>
+        <p>All data is stored exclusively on your device. Rafty does not transmit personal data to any server.</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Details</th>
+                        <th>User Control</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Browsing history</td>
+                        <td>URL, title, favicon, timestamp</td>
+                        <td>Incognito mode disables recording; can be cleared in-app</td>
+                    </tr>
+                    <tr>
+                        <td>Bookmarks</td>
+                        <td>URL, title, favicon, optional note</td>
+                        <td>Can be deleted in-app</td>
+                    </tr>
+                    <tr>
+                        <td>Saved sessions</td>
+                        <td>URL, title, favicon, position</td>
+                        <td>For session restoration; cleared on close</td>
+                    </tr>
+                    <tr>
+                        <td>User preferences</td>
+                        <td>Search engine, bubble position, opacity, UI toggles, etc.</td>
+                        <td>Configurable in Settings</td>
+                    </tr>
+                    <tr>
+                        <td>WebView data</td>
+                        <td>Cookies, localStorage, DOM storage from visited websites</td>
+                        <td>Managed by Android WebView</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>3. Data Transmitted Over the Network</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transmission</th>
+                        <th>Destination</th>
+                        <th>User Data Sent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web browsing</td>
+                        <td>User-visited websites</td>
+                        <td>Standard HTTP(S) requests (not collected by Rafty)</td>
+                    </tr>
+                    <tr>
+                        <td>Ad-block hosts update</td>
+                        <td>GitHub (StevenBlack/hosts)</td>
+                        <td>None (anonymous GET request, every 7 days)</td>
+                    </tr>
+                    <tr>
+                        <td>Premium purchase</td>
+                        <td>Google Play Billing API</td>
+                        <td>Handled entirely by Google Play</td>
+                    </tr>
+                    <tr>
+                        <td>In-app review</td>
+                        <td>Google Play Review API</td>
+                        <td>Handled entirely by Google Play</td>
+                    </tr>
+                    <tr>
+                        <td>App update check</td>
+                        <td>Google Play Update API</td>
+                        <td>Handled entirely by Google Play</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>4. Data NOT Collected</h2>
+        <p>Rafty does not collect, transmit, or process any of the following:</p>
+        <ul>
+            <li>Analytics or telemetry</li>
+            <li>Crash reports</li>
+            <li>Advertising data or ad network interactions</li>
+            <li>User accounts or authentication credentials</li>
+            <li>Device identifiers (Android ID, advertising ID)</li>
+            <li>Geolocation data</li>
+            <li>Cross-app tracking data</li>
+            <li>Any data shared with third parties</li>
+        </ul>
+
+        <h2>5. Cloud Backup</h2>
+        <p>Rafty explicitly excludes all app data from Android cloud backup and device transfer. Your data stays on your device only.</p>
+
+        <h2>6. Free vs Premium</h2>
+        <p>Both the free and premium tiers collect the same data. The only difference is storage limits:</p>
+        <ul>
+            <li>Free: 25 history entries, 5 bookmarks, 2 concurrent bubbles</li>
+            <li>Premium: unlimited</li>
+        </ul>
+
+        <h2>7. Your Rights (GDPR)</h2>
+        <p>Under the General Data Protection Regulation (GDPR), you have the following rights:</p>
+        <ul>
+            <li><strong>Right of access:</strong> all data is visible directly in the app</li>
+            <li><strong>Right of deletion:</strong> history and bookmarks can be deleted in-app; uninstalling the app removes all data</li>
+            <li><strong>Right of portability:</strong> data is stored locally on your device</li>
+        </ul>
+        <p>Since Rafty does not operate any servers, there is no data processing on our side and no data processing agreement applies.</p>
+
+        <h2>8. Permissions</h2>
+        <p>Rafty requests the following Android permissions:</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SYSTEM_ALERT_WINDOW</td>
+                        <td>Display floating bubble overlays on top of other apps</td>
+                    </tr>
+                    <tr>
+                        <td>INTERNET</td>
+                        <td>Load web pages in the browser</td>
+                    </tr>
+                    <tr>
+                        <td>ACCESS_NETWORK_STATE</td>
+                        <td>Check network availability for ad-block updates</td>
+                    </tr>
+                    <tr>
+                        <td>FOREGROUND_SERVICE</td>
+                        <td>Keep the overlay service running</td>
+                    </tr>
+                    <tr>
+                        <td>FOREGROUND_SERVICE_SPECIAL_USE</td>
+                        <td>Run foreground service for floating overlay (required on Android 14+)</td>
+                    </tr>
+                    <tr>
+                        <td>POST_NOTIFICATIONS</td>
+                        <td>Display foreground service notification</td>
+                    </tr>
+                    <tr>
+                        <td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td>
+                        <td>Optionally exempt from battery optimization</td>
+                    </tr>
+                    <tr>
+                        <td>RECEIVE_BOOT_COMPLETED</td>
+                        <td>Auto-start search notification after device reboot</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>9. Children's Privacy</h2>
+        <p>Rafty is not directed at children under 13 (COPPA) or under 16 (GDPR). The app does not knowingly collect data from children.</p>
+
+        <h2>10. Data Retention</h2>
+        <p>All data is stored locally on your device and persists until you explicitly delete it (via in-app controls) or uninstall the app. Rafty has no server-side storage, so there is no retention period managed by the developer.</p>
+
+        <h2>11. Third-Party Services</h2>
+        <p>Rafty integrates the following third-party services, each governed by their own privacy policies:</p>
+        <ul>
+            <li><strong>Google Play Billing</strong> (premium purchase): <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+            <li><strong>Google Play In-App Review</strong>: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+            <li><strong>Google Play In-App Update</strong>: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+            <li><strong>StevenBlack/hosts</strong> (ad-block list): <a href="https://github.com/StevenBlack/hosts">open source project on GitHub</a></li>
+        </ul>
+
+        <h2>12. Contact</h2>
+        <p>For privacy-related inquiries, please reach out via our <a href="https://tally.so/r/PLACEHOLDER">contact form</a>.</p>
+
+        <h2>13. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Changes will be communicated via app update notes, and the effective date at the top of this page will be updated accordingly.</p>
+
+        <div class="footer">
+            <p>&copy; 2026 Hogwai. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
