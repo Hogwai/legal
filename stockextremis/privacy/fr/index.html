@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockExtremis - Politique de confidentialit&#233;</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="alternate" hreflang="en" href="../">
+    <link rel="alternate" hreflang="fr" href="./">
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../../../">&larr; Hogwai Legal</a> &middot; <a href="../">English</a>
+        </div>
+
+        <h1>Politique de confidentialit&eacute;</h1>
+        <p class="effective-date">StockExtremis &middot; 26 mars 2026</p>
+
+        <div class="intro">
+            <p>StockExtremis est une application de gestion de stocks et de suivi des dates de p&eacute;remption pour Android, d&eacute;velopp&eacute;e par Hogwai. Vos donn&eacute;es produit restent sur votre appareil. Nous ne collectons que les donn&eacute;es minimales n&eacute;cessaires au contr&ocirc;le d'acc&egrave;s de la version d'&eacute;valuation.</p>
+        </div>
+
+        <h2>Donn&eacute;es stock&eacute;es localement</h2>
+        <p>Toutes les donn&eacute;es produit et utilisateur sont stock&eacute;es exclusivement sur votre appareil via une base de donn&eacute;es locale et des pr&eacute;f&eacute;rences. StockExtremis ne transmet pas vos donn&eacute;es produit vers un serveur.</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Donn&eacute;e</th>
+                        <th>D&eacute;tails</th>
+                        <th>Contr&ocirc;le utilisateur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Produits et lots</td>
+                        <td>Nom du produit, code-barres, image, date de p&eacute;remption, statut, champs personnalis&eacute;s</td>
+                        <td>Peuvent &ecirc;tre ajout&eacute;s, modifi&eacute;s et supprim&eacute;s dans l'application</td>
+                    </tr>
+                    <tr>
+                        <td>Cat&eacute;gories et marques</td>
+                        <td>Cat&eacute;gories et marques cr&eacute;&eacute;es par l'utilisateur pour organiser les produits</td>
+                        <td>G&eacute;rables dans l'application</td>
+                    </tr>
+                    <tr>
+                        <td>Pr&eacute;f&eacute;rences utilisateur</td>
+                        <td>Th&egrave;me, langue, param&egrave;tres de notification, planification des rappels</td>
+                        <td>Configurables dans les Param&egrave;tres</td>
+                    </tr>
+                    <tr>
+                        <td>Images produit</td>
+                        <td>Photos prises ou import&eacute;es pour les produits, stock&eacute;es dans le stockage priv&eacute; de l'application</td>
+                        <td>Supprim&eacute;es lorsque le produit associ&eacute; est retir&eacute;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Services Firebase (versions d'&eacute;valuation uniquement)</h2>
+        <p>Les versions d'&eacute;valuation de StockExtremis utilisent les services Firebase pour le contr&ocirc;le d'acc&egrave;s. <strong>Les versions de production n'utilisent pas Firebase.</strong></p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Objectif</th>
+                        <th>Donn&eacute;es collect&eacute;es</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Firebase Firestore</td>
+                        <td>Enregistrer l'installation et v&eacute;rifier l'autorisation d'acc&egrave;s</td>
+                        <td>ID d'installation Firebase, mod&egrave;le d'appareil, version de l'application, horodatage du dernier check-in</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Installations</td>
+                        <td>G&eacute;n&eacute;rer un identifiant d'installation unique et anonyme</td>
+                        <td>ID d'installation (non li&eacute; &agrave; des informations personnelles)</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Analytics</td>
+                        <td>D&eacute;pendance requise pour Firebase ; la collecte automatique est <strong>d&eacute;sactiv&eacute;e</strong></td>
+                        <td>Un seul &eacute;v&eacute;nement personnalis&eacute; (<code>eval_install</code>) enregistr&eacute; au premier lancement uniquement</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>L'ID d'installation Firebase est un identifiant anonyme g&eacute;n&eacute;r&eacute; al&eacute;atoirement. Il n'est pas li&eacute; &agrave; votre compte Google, num&eacute;ro de t&eacute;l&eacute;phone, e-mail ou toute autre information personnelle. Le d&eacute;veloppeur peut d&eacute;sactiver l'acc&egrave;s &agrave; une installation sp&eacute;cifique &agrave; distance.</p>
+
+        <h2>Transmissions r&eacute;seau</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transmission</th>
+                        <th>Destination</th>
+                        <th>Donn&eacute;es utilisateur envoy&eacute;es</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Recherche de produit par code-barres</td>
+                        <td>API Open Food Facts</td>
+                        <td>Num&eacute;ro de code-barres uniquement ; requ&ecirc;te anonyme avec User-Agent de l'application</td>
+                    </tr>
+                    <tr>
+                        <td>V&eacute;rification d'acc&egrave;s &eacute;valuation</td>
+                        <td>Google Firebase (Firestore)</td>
+                        <td>ID d'installation, mod&egrave;le d'appareil, version de l'application (versions d'&eacute;valuation uniquement)</td>
+                    </tr>
+                    <tr>
+                        <td>Achat premium</td>
+                        <td>Google Play Billing API</td>
+                        <td>G&eacute;r&eacute; enti&egrave;rement par Google Play</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Donn&eacute;es non collect&eacute;es</h2>
+        <p>StockExtremis ne collecte, ne transmet et ne traite aucune des donn&eacute;es suivantes :</p>
+        <ul>
+            <li>Sessions utilisateur, r&eacute;tention ou analytique comportementale</li>
+            <li>Rapports de plantage</li>
+            <li>Donn&eacute;es publicitaires ou interactions avec des r&eacute;gies publicitaires</li>
+            <li>Comptes utilisateur ou identifiants d'authentification</li>
+            <li>Identifiants personnels (nom, e-mail, num&eacute;ro de t&eacute;l&eacute;phone)</li>
+            <li>Donn&eacute;es de g&eacute;olocalisation</li>
+            <li>Suivi inter-applications</li>
+            <li>Donn&eacute;es produit transmises vers un serveur (restent sur l'appareil)</li>
+        </ul>
+
+        <h2>Vos droits (RGPD)</h2>
+        <p>En vertu du R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es (RGPD), vous disposez des droits suivants :</p>
+        <ul>
+            <li><strong>Droit d'acc&egrave;s :</strong> toutes les donn&eacute;es produit sont visibles directement dans l'application ; l'ID d'installation Firebase est affich&eacute; dans la page &Agrave; propos</li>
+            <li><strong>Droit de suppression :</strong> toutes les donn&eacute;es locales peuvent &ecirc;tre supprim&eacute;es dans l'application ou en d&eacute;sinstallant ; l'enregistrement Firestore peut &ecirc;tre supprim&eacute; sur demande</li>
+            <li><strong>Droit &agrave; la portabilit&eacute; :</strong> les donn&eacute;es peuvent &ecirc;tre export&eacute;es en CSV via la fonction d'export de l'application</li>
+        </ul>
+
+        <h2>Permissions</h2>
+        <p>StockExtremis demande les permissions Android suivantes :</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Objectif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>INTERNET</td>
+                        <td>Recherche de code-barres via Open Food Facts ; v&eacute;rification d'acc&egrave;s Firebase (&eacute;valuation uniquement)</td>
+                    </tr>
+                    <tr>
+                        <td>ACCESS_NETWORK_STATE</td>
+                        <td>V&eacute;rifier la disponibilit&eacute; du r&eacute;seau</td>
+                    </tr>
+                    <tr>
+                        <td>CAMERA</td>
+                        <td>Scanner les codes-barres avec la cam&eacute;ra de l'appareil</td>
+                    </tr>
+                    <tr>
+                        <td>POST_NOTIFICATIONS</td>
+                        <td>Afficher les notifications de rappel de p&eacute;remption</td>
+                    </tr>
+                    <tr>
+                        <td>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</td>
+                        <td>Planifier des notifications de rappel pr&eacute;cises</td>
+                    </tr>
+                    <tr>
+                        <td>RECEIVE_BOOT_COMPLETED</td>
+                        <td>Replanifier les rappels apr&egrave;s le red&eacute;marrage de l'appareil</td>
+                    </tr>
+                    <tr>
+                        <td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td>
+                        <td>Exemption optionnelle de l'optimisation de batterie pour des rappels fiables</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Protection des mineurs</h2>
+        <p>StockExtremis ne s'adresse pas aux enfants de moins de 13 ans (COPPA) ni de moins de 16 ans (RGPD). L'application ne collecte pas sciemment de donn&eacute;es concernant des mineurs.</p>
+
+        <h2>Conservation des donn&eacute;es</h2>
+        <p>Toutes les donn&eacute;es produit sont stock&eacute;es localement sur votre appareil et persistent jusqu'&agrave; ce que vous les supprimiez explicitement ou que vous d&eacute;sinstalliez l'application. Pour les versions d'&eacute;valuation, l'enregistrement Firestore persiste jusqu'&agrave; suppression manuelle par le d&eacute;veloppeur. Aucune autre donn&eacute;e c&ocirc;t&eacute; serveur n'est conserv&eacute;e.</p>
+
+        <h2>Services tiers</h2>
+        <p>StockExtremis int&egrave;gre les services tiers suivants, chacun r&eacute;gi par sa propre politique de confidentialit&eacute; :</p>
+        <ul>
+            <li><strong>Open Food Facts</strong> (recherche de produits) : <a href="https://world.openfoodfacts.org/terms-of-use">Conditions d'utilisation</a></li>
+            <li><strong>Google Firebase</strong> (contr&ocirc;le d'acc&egrave;s &eacute;valuation) : <a href="https://firebase.google.com/support/privacy">Confidentialit&eacute; Firebase</a></li>
+            <li><strong>Google Play Billing</strong> (achat premium) : <a href="https://policies.google.com/privacy">Politique de confidentialit&eacute; de Google</a></li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>Pour toute question relative &agrave; la confidentialit&eacute;, veuillez nous contacter via notre <a href="https://tally.so/r/q4Okx5">formulaire de contact</a>.</p>
+
+        <h2>Modifications de cette politique</h2>
+        <p>Nous pouvons mettre &agrave; jour cette politique de confidentialit&eacute;. Les modifications seront communiqu&eacute;es via les notes de mise &agrave; jour de l'application, et la date d'entr&eacute;e en vigueur en haut de cette page sera mise &agrave; jour en cons&eacute;quence.</p>
+
+        <footer class="footer">
+            <p>&copy; 2026 Hogwai. Tous droits r&eacute;serv&eacute;s.</p>
+        </footer>
+    </div>
+</body>
+</html>
