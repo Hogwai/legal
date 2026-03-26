@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockExtremis - Privacy Policy</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="alternate" hreflang="fr" href="fr/">
+    <link rel="alternate" hreflang="en" href="./">
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../../">&larr; Hogwai Legal</a> &middot; <a href="fr/">Fran&ccedil;ais</a>
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">StockExtremis &middot; Effective March 26, 2026</p>
+
+        <div class="intro">
+            <p>StockExtremis is a stock management and expiration tracking app for Android developed by Hogwai. Your product data stays on your device. We only collect minimal data necessary for the evaluation version&rsquo;s access control.</p>
+        </div>
+
+        <h2>Data Stored Locally</h2>
+        <p>All product and user data is stored exclusively on your device using a local database and preferences. StockExtremis does not transmit your product data to any server.</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Details</th>
+                        <th>User Control</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Products &amp; batches</td>
+                        <td>Product name, barcode, image, expiration date, status, custom fields</td>
+                        <td>Can be added, edited, and deleted in-app</td>
+                    </tr>
+                    <tr>
+                        <td>Categories &amp; brands</td>
+                        <td>User-created categories and brands for product organization</td>
+                        <td>Can be managed in-app</td>
+                    </tr>
+                    <tr>
+                        <td>User preferences</td>
+                        <td>Theme, language, notification settings, reminder schedules</td>
+                        <td>Configurable in Settings</td>
+                    </tr>
+                    <tr>
+                        <td>Product images</td>
+                        <td>Photos taken or imported for products, stored in app-private storage</td>
+                        <td>Deleted when the associated product is removed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Firebase Services (Evaluation Builds Only)</h2>
+        <p>Evaluation builds of StockExtremis use Firebase services for access control. <strong>Production builds do not use Firebase at all.</strong></p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Data Collected</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Firebase Firestore</td>
+                        <td>Register the installation and check access authorization</td>
+                        <td>Firebase Installation ID, device model, app version, last check-in timestamp</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Installations</td>
+                        <td>Generate a unique, anonymous installation identifier</td>
+                        <td>Installation ID (not linked to any personal information)</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Analytics</td>
+                        <td>Required dependency for Firebase; automatic collection is <strong>disabled</strong></td>
+                        <td>One custom event (<code>eval_install</code>) logged on first launch only</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>The Firebase Installation ID is an anonymous, randomly generated identifier. It is not linked to your Google account, phone number, email, or any other personal information. The developer can disable access to a specific installation remotely.</p>
+
+        <h2>Network Transmissions</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transmission</th>
+                        <th>Destination</th>
+                        <th>User Data Sent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product lookup by barcode</td>
+                        <td>Open Food Facts API</td>
+                        <td>Barcode number only; anonymous request with app User-Agent</td>
+                    </tr>
+                    <tr>
+                        <td>Eval access check</td>
+                        <td>Google Firebase (Firestore)</td>
+                        <td>Installation ID, device model, app version (eval builds only)</td>
+                    </tr>
+                    <tr>
+                        <td>Premium purchase</td>
+                        <td>Google Play Billing API</td>
+                        <td>Handled entirely by Google Play</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Data Not Collected</h2>
+        <p>StockExtremis does not collect, transmit, or process any of the following:</p>
+        <ul>
+            <li>User sessions, retention, or behavioral analytics</li>
+            <li>Crash reports</li>
+            <li>Advertising data or ad network interactions</li>
+            <li>User accounts or authentication credentials</li>
+            <li>Personal identifiers (name, email, phone number)</li>
+            <li>Geolocation data</li>
+            <li>Cross-app tracking data</li>
+            <li>Product data transmitted to any server (stays on device)</li>
+        </ul>
+
+        <h2>Your Rights (GDPR)</h2>
+        <p>Under the General Data Protection Regulation (GDPR), you have the following rights:</p>
+        <ul>
+            <li><strong>Right of access:</strong> all product data is visible directly in the app; the Firebase Installation ID is displayed in the About page</li>
+            <li><strong>Right of deletion:</strong> all local data can be deleted in-app or by uninstalling; the Firestore installation record can be deleted on request</li>
+            <li><strong>Right of portability:</strong> data can be exported to CSV via the app&rsquo;s export feature</li>
+        </ul>
+
+        <h2>Permissions</h2>
+        <p>StockExtremis requests the following Android permissions:</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>INTERNET</td>
+                        <td>Barcode lookup via Open Food Facts; Firebase access check (eval only)</td>
+                    </tr>
+                    <tr>
+                        <td>ACCESS_NETWORK_STATE</td>
+                        <td>Check network availability</td>
+                    </tr>
+                    <tr>
+                        <td>CAMERA</td>
+                        <td>Scan barcodes using the device camera</td>
+                    </tr>
+                    <tr>
+                        <td>POST_NOTIFICATIONS</td>
+                        <td>Display expiration reminder notifications</td>
+                    </tr>
+                    <tr>
+                        <td>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</td>
+                        <td>Schedule precise reminder notifications</td>
+                    </tr>
+                    <tr>
+                        <td>RECEIVE_BOOT_COMPLETED</td>
+                        <td>Reschedule reminders after device restart</td>
+                    </tr>
+                    <tr>
+                        <td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td>
+                        <td>Optionally exempt from battery optimization for reliable reminders</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Children&rsquo;s Privacy</h2>
+        <p>StockExtremis is not directed at children under 13 (COPPA) or under 16 (GDPR). The app does not knowingly collect data from children.</p>
+
+        <h2>Data Retention</h2>
+        <p>All product data is stored locally on your device and persists until you explicitly delete it or uninstall the app. For evaluation builds, the Firestore installation record persists until manually deleted by the developer. No other server-side data is retained.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>StockExtremis integrates the following third-party services, each governed by their own privacy policies:</p>
+        <ul>
+            <li><strong>Open Food Facts</strong> (product lookup): <a href="https://world.openfoodfacts.org/terms-of-use">Terms of Use</a></li>
+            <li><strong>Google Firebase</strong> (eval access control): <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+            <li><strong>Google Play Billing</strong> (premium purchase): <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>For privacy-related inquiries, please reach out via our <a href="https://tally.so/r/q4Okx5">contact form</a>.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Changes will be communicated via app update notes, and the effective date at the top of this page will be updated accordingly.</p>
+
+        <footer class="footer">
+            <p>&copy; 2026 Hogwai. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
